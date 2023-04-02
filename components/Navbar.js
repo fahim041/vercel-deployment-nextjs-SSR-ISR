@@ -24,7 +24,9 @@ export default function Navbar() {
             </li>
 
             <li>
-              <SignOutButton />
+              <Link href="/enter">
+                <button>Log out</button>
+              </Link>
             </li>
 
             <li>

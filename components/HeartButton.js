@@ -4,13 +4,13 @@ import Link from "next/link";
 
 // Allows user to heart or like a post
 export default function Heart({ postRef }) {
-  if (!auth.currentUser) {
-    return (
-      <Link href="/enter">
-        <button>Sign Up</button>
-      </Link>
-    );
-  }
+  // if (!auth.currentUser) {
+  //   return (
+  //     <Link href="/enter">
+  //       <button>Sign Up</button>
+  //     </Link>
+  //   );
+  // }
 
   const heartRef = postRef.collection("hearts").doc(auth.currentUser.uid);
   const [heartDoc] = useDocument(heartRef);
